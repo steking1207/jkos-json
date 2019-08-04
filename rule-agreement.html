@@ -16,7 +16,7 @@
     $(function() {
        $.getJSON('data.json', function(data) {
            $.each(data.list, function(i, f) {
-               var rule = "<div class='h2 font-weight-bold mb-4'>" + f.title + "</div>" +
+               var rule = "<div class='h2 font-weight-bold mb-4 text-center'>" + f.title + "</div>" +
                    "<div>" + f.content + "</div>"
                $(rule).appendTo("#rule-agreement");
            });
