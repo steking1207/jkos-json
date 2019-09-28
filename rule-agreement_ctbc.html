@@ -12,14 +12,15 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
     $(function() {
-       $.getJSON('https://steking1207.github.io/jkos-json/data.json', function(data) {
-//       $.getJSON('https://www.ctbcbank.com/content/ctbc-ib/zh_rb/payment-tax/EasyPay/AcctLinkAgreement/e-payment.list.key.common.json', function(data) {
+//       $.getJSON('https://steking1207.github.io/jkos-json/data.json', function(data) {
+       $.getJSON('https://www.ctbcbank.com/content/ctbc-ib/zh_rb/payment-tax/EasyPay/AcctLinkAgreement/e-payment.list.key.common.json', function(data) {
            $.each(data.list, function(i, f) {
                var rule = "<div class='h2 font-weight-bold my-4 text-center'>" + f.title + "</div>" +
                    "<div>" + f.content + "</div>"
                $(rule).appendTo("#rule-agreement");
            });
        });
+
     });
     </script>
 
